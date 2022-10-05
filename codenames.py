@@ -1,7 +1,9 @@
+#!/usr/bin/env python3
+
 import itertools, random
 import pathlib as p
 
-script_dir = p.Path.cwd()
+script_dir = p.Path(__file__).resolve(strict=True).parent
 
 def load_words(filename):
     with open(filename) as f:

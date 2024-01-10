@@ -19,12 +19,14 @@ def load_words(filename):
 
 adjs, adjs_weights = load_words(p.Path.joinpath(script_dir, 'words/adj.txt'))
 nouns, nouns_weights = load_words(p.Path.joinpath(script_dir, 'words/noun.txt'))
-names_list = []
 
 if not args.n:
     n = 20
 else:
     n = args.n
+
+if args.alpha:
+    names_list = []
 
 # TODO: This works, but can probably be done more cleanly
 for _ in range(n):

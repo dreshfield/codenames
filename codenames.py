@@ -4,9 +4,9 @@ import itertools, random
 import argparse as ap
 import pathlib as p
 
-parser = ap.ArgumentParser(description='Generates randomly-generated codenames in the style of U.S. military/intelligence operations')
-parser.add_argument('-a', '--alpha', dest='alpha', action='store_true', help='Display results in alphabetical, rather than random, order')
-parser.add_argument('-n', '--number', type=int, dest='n', action='store', nargs='?', help='Specify number of results to return (with no arguments, script defaults to 20)')
+parser = ap.ArgumentParser(description='Generates random codenames in the style of U.S. military/intelligence operations')
+parser.add_argument('-a', '--alpha', dest='alpha', action='store_true', help='display results in alphabetical, rather than random, order')
+parser.add_argument('-n', '--number', type=int, dest='n', action='store', nargs='?', help='specify number of results to return (with no arguments, script defaults to 20)')
 args = parser.parse_args()
 
 script_dir = p.Path(__file__).resolve(strict=True).parent

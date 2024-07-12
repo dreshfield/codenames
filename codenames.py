@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 
-import itertools, random
 import argparse as ap
+import itertools
 import pathlib as p
+import random
 
 parser = ap.ArgumentParser(description='Generates random codenames in the style of U.S. military/intelligence operations')
 parser.add_argument('-a', '--alpha', dest='alpha', action='store_true', help='display results in alphabetical, rather than random, order')
